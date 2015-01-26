@@ -24,7 +24,7 @@ describe "DescriptiveStatistics" do
     end
 
     it "calculates the variance" do
-      expect(subject.variance).to eql(7.7190082644628095)
+      expect(subject.variance).to eql(8.4909)
     end
 
     it "calculates the standard_deviation" do

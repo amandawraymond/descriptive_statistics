@@ -22,7 +22,7 @@ describe "DescriptiveStatistics" do
     end
 
     it "calculates the mean" do
-      expect(subject.mean).to eql(4.857142857142857)
+      expect(subject.mean).to eql(4.8571)
     end
 
     it "calculates the median" do
@@ -30,11 +30,11 @@ describe "DescriptiveStatistics" do
     end
 
     it "calculates the variance" do
-      expect(subject.variance).to eql(7.836734693877552)
+      expect(subject.variance).to eql(9.1429)
     end
 
     it "calculates the standard_deviation" do
-      expect(subject.standard_deviation).to eql(2.799416848895061)
+      expect(subject.standard_deviation).to eql(3.0237228708993817)
     end
 
     it "calculates the percentile" do

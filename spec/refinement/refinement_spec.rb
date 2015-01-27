@@ -6,10 +6,6 @@ describe "DescriptiveStatistics" do
   it "is refinable" do
 
     class Test
-      def self.unrefined
-        [1, 2, 3].mean
-        {a:1, b:2, c:3}.mean
-      end
 
       using DescriptiveStatistics::Refinement.new(Array, Hash)
 
@@ -19,7 +15,6 @@ describe "DescriptiveStatistics" do
       end
     end
 
-    expect{Test.unrefined}.to raise_error
     expect{Test.refined}.not_to raise_error
 
   end

@@ -23,13 +23,6 @@ describe "DescriptiveStatistics" do
       expect(subject.median).to eql(2.0)
     end
 
-    it "calculates the variance" do
-      expect(subject.variance).to eql(0.0)
-    end
-
-    it "calculates the standard_deviation" do
-      expect(subject.standard_deviation).to eql(0.0)
-    end
 
     it "calculates the percentile" do
       expect(subject.percentile(30)).to eql(2.0)
